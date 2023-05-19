@@ -1,0 +1,7 @@
+---
+# handlers file for hardening_linux
+
+- name: Reload firewall service
+  service:
+    name: "{{ firewall_service_name }}"
+    state: reloaded
